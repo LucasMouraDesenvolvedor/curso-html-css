@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML5</title>
+</head>
+<body>
+    <h1>Vídeos em HTML5</h1>
+    <hr>
+    <h2>Vídeos locais</h2>
+    <p>Vídeo rodando dentro do próprio servidor</p>
+    <video controls width="560" poster="imagens/capa.png">
+        <source src="midia/mar.mp4" type="video/mp4">
+        <source src="midia/mar.m4v" type="video/mp4">
+        <source src="midia/mar.ogv" type="video/ogg">
+        <source src="midia/mar.webm" type="video/webm">
+    </video>
+    <h2>Vídeos externos</h2>
+    <h3>YouTube</h3>
+    <p>Vídeo rodando online através do YouTube.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/PuYTC0KOp8w?si=e6UVmogwx0jt6net" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h3>Vimeo</h3>
+    <p>Vídeo rodando online através do Vimeo.</p>
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/892694940?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:50%;height:50%;" title="mar"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>
