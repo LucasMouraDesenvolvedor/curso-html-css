@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão Background</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div {
+            background-color: lightblue;
+            width: 300px;
+            height: 150px;
+        }
+        div#cor {
+            background-color: red;
+        }
+        div#gradiente {
+            background-image: linear-gradient(to left, lightgreen, lightblue);
+            /* REVISAR! P */
+        }
+        div#img-local {
+            background-image: url(imagens-exercicios/imagem\ 1.jpg)
+        }
+        div#img-online {
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png);
+        }
+
+        div#p-img {
+            /*
+            background-image: url(imagens-exercicios/imagem\ 1.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-attachment: scroll;
+            */
+            background: url(imagens-exercicios/imagem\ 1.jpg) no-repeat center center scroll;
+            background-size: cover;
+            /* REVISAR! M */
+        }
+    </style>
+</head>
+<body>
+    <h1>Revisão de Background</h1>
+    <h2>Background com cor</h2>
+    <div id="cor"></div>
+    <h2>Background com gradiente</h2>
+    <div id="gradiente"></div>
+    <h2>Background com imagem local</h2>
+    <div id="img-local"></div>
+    <h2>Background com imagem online</h2>
+    <div id="img-online"></div>
+    <hr>
+    <h1>Posicionamento de imagem</h1>
+    <div id="p-img"></div>
+</body>
+</html>
