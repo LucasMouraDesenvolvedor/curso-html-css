@@ -11,6 +11,18 @@
         iframe {
             border: 2px solid black;
         }
+        a#teste {
+            background-color: lightblue;
+            padding: 15px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: black;
+            border: 1px solid black;
+            margin-top: 60px;
+        }
+        p#botao {
+            margin: 30px;
+        }
     </style>
 </head>
 <body>
@@ -26,9 +38,15 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias itaque quam, sed a veritatis voluptatem ea tempora beatae quis fugit optio excepturi in at adipisci ipsa libero? Amet, illo illum!</p>
 
     <iframe src="" frameborder="0" name="tela">
-        <p>Seu browser não suporta isso.</p>
+        <p>Seu browser não suporta iframes.</p>
     </iframe>
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure atque dolore, blanditiis error magni obcaecati at debitis quisquam? Voluptas, dignissimos! Harum dicta earum mollitia id esse quod consequatur consequuntur eveniet.</p>
+
+    <!-- APAGAR APARTIR DAQUI (SE QUISER) -->
+
+    <iframe frameborder="0" name="iframe" srcdoc="<h1>Projeto Cordel</h1><p>Abra o projeto clicando no botão abaixo:</p>"></iframe>
+
+    <p id="botao"><a id="teste" href="https://lucasmouradesenvolvedor.github.io/projeto-cordel/" target="iframe">ABRIR PROJETO CORDEL</a></p>
 </body>
 </html>
