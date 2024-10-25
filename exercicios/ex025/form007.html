@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body {
+            font-family: Arial Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form action="" method="post">
+        <label for="ipro">Escolha um projeto:</label>
+        <select name="projetos" id="ipro">
+            <optgroup label="Mais conhecidos">
+                <option value="">Mídia</option>
+                <option value="">Esportes</option>
+                <option value="" selected>Universitários</option>
+            </optgroup>
+            <optgroup label="Atuando com pessoas">
+                <option value="">Arcanjos</option>
+                <option value="">Help</option>
+            </optgroup>
+        </select>
+
+        <p>
+            <label for="itrab">Profissão:</label>
+            <input type="text" name="trab" id="itrab" list="trabalhos">
+            <datalist id="trabalhos">
+                <option>Porteiro</option>
+                <option>Bombeiro</option>
+                <option>Policial</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imensagem">Mensagem:</label> <br>
+            <textarea name="mensagem" id="imensagem" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
