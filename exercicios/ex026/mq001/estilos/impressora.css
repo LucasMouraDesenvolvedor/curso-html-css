@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+
+/* ESTILO PARA IMPRESSORAS */
+
+html {
+    font-family:'Courier New', Courier, monospace;
+}
+
+menu {
+    display: none;
+}
+
+article::after {
+    content: 'Conteúdo impresso do site: https://example.org/noticias';
+    font-weight: bold;
+}
